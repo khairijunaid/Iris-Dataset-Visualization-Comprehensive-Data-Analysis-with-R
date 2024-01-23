@@ -10,10 +10,8 @@
 This project is an R Markdown document that demonstrates my ability to use R for data analysis and visualization. It involves using various R packages like ggplot2, gridExtra, beanplot, ggstance, and ggimage to create insightful charts and visual representations of data. 
 
 **Key Features:**
-Comprehensive Data Analysis: The project showcases my skills in handling, processing, and analyzing complex datasets using R.
-Advanced Data Visualization: Utilizes ggplot2 and other R libraries to create visually appealing and informative graphs and plots.
-R Markdown Proficiency: Demonstrates my ability to author documents in R Markdown, integrating code, output, and narrative in a cohesive format.
-PDF Output: The document is configured to be output as a PDF, showcasing my skill in preparing reports suitable for both academic and professional purposes.
+This project showcases my skills in handling, processing, and analyzing complex datasets using R. It utilizes ggplot2 and other R libraries to create visually appealing and informative graphs and plots. It demonstrates my ability to author documents in R Markdown, integrating code, output, and narrative in a cohesive format.
+
 
 **Learning Outcomes:**
 Mastery in R programming for data analysis.
