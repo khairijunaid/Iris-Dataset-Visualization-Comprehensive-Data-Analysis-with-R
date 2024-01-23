@@ -1,6 +1,9 @@
 **Project Title:** Data Analysis and Visualization with R (Assignment2.4)
+
 **Author:** Junaid Khairi
+
 **Date:** 2023-10-19
+
 **Technology: **R, R Markdown, ggplot2, and other visualization libraries
 
 **Overview:**
