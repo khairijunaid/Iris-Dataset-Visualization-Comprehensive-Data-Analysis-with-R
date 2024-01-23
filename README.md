@@ -1,3 +1,5 @@
+# COIS3510H: Data Visualization, Assignment 2
+
 **Project Title:** Data Analysis and Visualization with R 
 
 **Author:** Junaid Khairi
