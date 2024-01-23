@@ -1,4 +1,4 @@
-**Project Title:** Data Analysis and Visualization with R (Assignment2.4)
+**Project Title:** Data Analysis and Visualization with R 
 
 **Author:** Junaid Khairi
 
