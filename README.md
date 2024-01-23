@@ -4,7 +4,7 @@
 
 **Date:** 2023-10-19
 
-**Technology: **R, R Markdown, ggplot2, and other visualization libraries
+**Technology:** R, R Markdown, ggplot2, and other visualization libraries
 
 **Overview:**
 This project is an R Markdown document that demonstrates my ability to use R for data analysis and visualization. It involves using various R packages like ggplot2, gridExtra, beanplot, ggstance, and ggimage to create insightful charts and visual representations of data. 
