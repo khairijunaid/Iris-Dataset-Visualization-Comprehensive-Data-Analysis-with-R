@@ -1,0 +1,95 @@
+---
+title: "Assignment2.4"
+author: "Junaid Khairi"
+date: "2023-10-19"
+output: pdf_document
+---
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r Charts and Functions}
+
+library("ggplot2")
+library("gridExtra")
+library("beanplot")
+library("ggstance")
+library("ggimage")
+library("magick")
+
+data(iris)
+
+
+"1. Density Plot,Helps in understanding how sepal width varies and shows the density by species."
+density1 <- ggplot(iris, aes(x = Sepal.Width, fill = Species)) +
+  geom_density(alpha = 0.5) +
+  labs(title = "Density Plot of Sepal Width by Species", x = "Sepal Width")
+density1
+
+"2. Histogram, This gives us a distribution of the sepal lengths in the iris dataset."
+hist1 <- ggplot(iris, aes(x = Sepal.Length)) +
+  geom_histogram(fill = "steelblue", color = "white") +
+  labs(title = "Histogram of Sepal Length", x = "Sepal Length", y = "Frequency")
+hist1
+
+"3. Violin, Combines a boxplot and density plot; displays distribution by species."  
+violin1 <- ggplot(iris, aes(x = Species, y = Petal.Width, fill = Species)) +
+  geom_violin() +
+  labs(title = "Violin Plot of Petal Width by Species", x = "Species", y = "Petal Width")
+violin1
+
+"4.Boxplot, Shows median, quartiles, and outliers of petal lengths for each species."
+boxplot1 <- ggplot(iris, aes(x = Species, y = Petal.Length, fill = Species)) +
+  geom_boxplot() +
+  labs(title = "Boxplot of Petal Length by Species", x = "Species", y = "Petal Length")
+boxplot1
+
+"5. Dot Plot, Shows individual data points, making it useful for spotting distribution and clusters."
+dotplot1 <- ggplot(iris, aes(x = Species, y = Sepal.Length)) +
+  geom_dotplot(binaxis = 'y', stackdir = 'center') +
+  labs(title = "Dot Plot of Sepal Length", x = "Species", y = "Sepal Length")
+dotplot1
+
+"6.Bar Plot, Shows the count of each species in the dataset."
+
+bar1 <- ggplot(iris, aes(x = Species, fill = Species)) +
+  geom_bar() +
+  labs(title = "Bar Plot of Species Count", x = "Species", y = "Count")
+bar1
+
+"7.Rug Plot, Displays individual data points as marks on an axis. Good for spotting data density."
+rug1 <- ggplot(iris, aes(x = Sepal.Length)) +
+  geom_rug() +
+  labs(title = "Rug Plot for Sepal Length", x = "Sepal Length")
+rug1
+
+"8.Pie Chart(Glyph): Provides a proportionate representation of species count"
+pie1 <- ggplot(iris, aes(x = "", fill = Species)) +
+  geom_bar(width = 1) +
+  coord_polar(theta = "y") +
+  labs(title = "Pie Chart of Species")
+pie1
+
+"9.Beanplot, Combines the density plot with stripchart to give a richer depiction of distribution by species"
+beanplot1 <- ggplot(iris, aes(x = Species, y = Petal.Length, fill = Species)) +
+  geom_violin() +
+  geom_dotplot(binaxis = "y", stackdir = "center", dotsize = 0.5, fill="white") +
+  labs(title = "Beanplot of Petal Length by Species", x = "Species", y = "Petal Length")
+beanplot1
+
+"10. Pictogram, Used to represent the counts of the different species."
+
+ggplot(iris, aes(x = 1, y = Sepal.Length, image = "flower.png", fill = Species)) +
+  geom_image(size = 0.05) +
+  labs(title = "Pictogram Glyph of Sepal Length by Species", x = "", y = "Sepal Length")
+
+
+
+```
+
+
