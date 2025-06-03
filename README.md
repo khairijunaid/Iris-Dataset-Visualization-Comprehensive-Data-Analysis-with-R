@@ -4,6 +4,8 @@
 
 **Author:** Junaid Khairi
 
+**Done For:** Course 3510H, Trent University
+
 **Technology:** R, R Markdown, ggplot2, gridExtra, beanplot, ggstance, ggimage, and other visualization libraries
 
 **Overview:** This project demonstrates comprehensive data visualization techniques using the famous Iris dataset in R. It involves creating 10 different types of visualizations including density plots, histograms, violin plots, boxplots, and specialized glyph visualizations to analyze the morphological characteristics of three iris species: setosa, versicolor, and virginica.
